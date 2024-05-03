@@ -37,13 +37,13 @@
   <br /><br />
 </form>
 <div class="cart-review-wrap">
-  <div class="my-shopping">
+  <!--div class="my-shopping">
     <div class="checkout-wrap"><div class="simpleCart_items"><div style="clear: both;"/><div class="cart-bot-element"><div class="cart-amount"><div class="cart-subtotal">Subtotal :<span class="simpleCart_total"></span></div><h4>Your order : </h4><div class="carter">You have <span class="simpleCart_quantity"> item(s) in your Cart.</span></div><div class="my-total">Total: <span class="simpleCart_total"></span></div></div><!--a class="simpleCart_checkout" href="javascript:;"><input class="checkout-bill" id="ContactForm1_contact-form-submit" value="Cart Order"></a--></div>
-    </div>Terms: Promotional items sold are NOT exchangeable and refundable.  All other item refunds upto 80% only & subject to approval.<p>条款: 所售促销品将不予退款或换货，其他项目经批准后仅予以最高80%的退款。</p>
-    </div>
+    
   </div>
 </div>
-
+</div>Terms: Promotional items sold are NOT exchangeable and refundable.  All other item refunds upto 80% only & subject to approval.<p>条款: 所售促销品将不予退款或换货，其他项目经批准后仅予以最高80%的退款。</p>
+</div>
 </!doctype>
 <form>
 <fieldset>
@@ -112,15 +112,14 @@ document.getElementById('date-time').innerHTML=dt;
   <h2>Billing Details(账单明细)</h2>
     <div class="cart-review-wrap">
       <div id="contact" class="form-bret">Customer name(顾客姓名)<br />
-        <input name="name" size="20" type="text" required/><br />Email address(邮件地址)<br /><input name="email" size="30" type="text" required/><br />phone number(手机号)<br /><input name="phone" size="20" type="number" required/><br />Outlet and Remarks(商店和备注)<br /><textarea class="contact-form-email-message" cols="25" id="ContactForm1_contact-form-email-message" name="email-message" placeholder="" rows="5"></textarea>
+        <input name="name" size="20" type="text" required/><br />Email address(邮件地址)<br /><input name="email" size="30" type="text" /><br />phone number(手机号)<br /><input name="phone" size="20" type="number" required/><br />Outlet and Remarks(商店和备注)<br /><textarea class="contact-form-email-message" cols="25" id="ContactForm1_contact-form-email-message" name="email-message" placeholder="" rows="5"></textarea>
       </div>
     </div>
    
   
 
 Do you agree to the company PDPA being limited to our marketing and notification with regards to your purchase?<br />
-<input type="checkbox" name="yes" value="yes" />yes
-<input type="checkbox" name="no" value="no" />no
+<input type="checkbox" name="yes" value="yes" required />yes
 <input type="submit" style="background-color: orange; border-radius: 8px; color: black; font-weight: bold; margin: 5px; padding: 8px 12px;" target="_blank" value="PRINT ORDER.打印订单">
 </>
 </form>
