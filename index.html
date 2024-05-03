@@ -1,0 +1,126 @@
+<!doctype html>
+<p style="color:red;"><b>请选择!</b></p>
+<form action="/action_page.php">
+  <label for="staff">Choose a staff:</label>
+  <select name="staff" id="staff">
+    <option value="select" />please select
+<option value="BM-Hong Mei" />BM. Hong Mei
+<option value="BM-Jessi" />BM. Jessi 
+<option value="BM-(Lyn) Liu Yan" />BM.(Lyn) Liu Yan
+<option value="BM-Svc Fee" />BM. Svc Fee
+<option value="CTP-Eva Fang Xia" />CTP. Eva Fang Xia
+<option value="CTP-Janet Lee" />CTP. Janet Lee
+<option value="CTP-Svc Fee" />CTP. Svc Fee
+<option value="PPK1-Paul" />PPK1. Paul
+<option value="PPK1-Deon Jiang" />PPK1. Deon Jiang
+<option value="PPK1-Wee Nun" />PPK1. Wee Nun
+<option value="PPK1-Liu Ai Ping" />PPK1. Liu Ai Ping
+<option value="PPK1-(Lyn)Liu Yan" />PPK1.(Lyn)Liu Yan
+<option value="PPK1-Svc Fee" />PPK1. Svc Fee
+<option value="PPK3-Li Hua" />PPK3. Li Hua   
+<option value="PPK3-Wang Xia" />PPK3. Wang Xia  
+<option value="PPK3-Julia " />PPK3. Julia
+<option value="PPK3-Svc Fee" />PPK3. Svc Fee
+<option value="WWP-Zheng Yan" />WWP. Zheng Yan
+<option value="WWP-Liang Yan" />WWP. Liang Yan
+<option value="WWP-Svc Fee" />WWP. Svc Fee
+<option value="WWP-Kwan Kok Chu" />WWP. Kwan Kok Chu
+<option value="FLS-Yu Shuang" />FLS. Yu Shuang
+<option value="FLS-(Lyn)Liu Yan" />FLS. (Lyn)Liu Yan
+ <option value="FLS-Liao Min" />FLS. Liao Min
+<option value="FLS- Athena chin" />FLS. Athena chin
+<option value="FLS-Svc Fee" />FLS. Svc Fee
+<option value="TPZ-Liu Ying" />TPZ. Liu Ying(Stella)
+<option value="TPZ-Vivian Ong" />TPZ. Vivian Ong
+<option value="TPZ-Svc Fee" />TPZ. Svc Fee
+ </select>
+  <br /><br />
+</form>
+<div class="cart-review-wrap">
+  <div class="my-shopping">
+    <div class="checkout-wrap"><div class="simpleCart_items"><div style="clear: both;"/><div class="cart-bot-element"><div class="cart-amount"><div class="cart-subtotal">Subtotal :<span class="simpleCart_total"></span></div><h4>Your order : </h4><div class="carter">You have <span class="simpleCart_quantity"> item(s) in your Cart.</span></div><div class="my-total">Total: <span class="simpleCart_total"></span></div></div><!--a class="simpleCart_checkout" href="javascript:;"><input class="checkout-bill" id="ContactForm1_contact-form-submit" value="Cart Order"></a--></div>
+    </div>Terms: Promotional items sold are NOT exchangeable and refundable.  All other item refunds upto 80% only & subject to approval.<p>条款: 所售促销品将不予退款或换货，其他项目经批准后仅予以最高80%的退款。</p>
+    </div>
+  </div>
+</div>
+
+</!doctype>
+<form>
+<fieldset>
+  <legend style="color: red; font-weight: bold;">[Referral Sales.销售推荐]</legend>
+  <div>
+ <input type="checkbox" id="item1" name="source" value="item1" />
+    <label for="item1">Qimen Saint Dez Ng</label>
+  </div>
+  <div>
+    <input type="checkbox" id="item2" name="source" value="item2" />
+    <label for="item2">Master Kieron Chua</label>
+  </div>
+  <div>
+    
+ </div></fieldset>
+</form>
+<h2 style="color:blue">FINAL PRICE.最终售价 </h2>
+<p>Cart Total: <output class="simpleCart_total" size="10" /></output></p>
+<p><font size="+1">Cart : <input id="input0" value="" placeholder="购物车金额" size="10" /></font></p>
+<p><font size="+1">Deposit : <input id="input1" placeholder="订金" size="13" /></font></p>
+<p><font size="+1">Discount : <input id="input2" placeholder="折扣" size="12" /></font></p>
+<p><font size="+1">Balance : <input id="input3" placeholder="余额" size="12"/></font></p>
+<button style="background-color: light-gray; border-color: blue; border-radius: 8px; color: blue; font-weight: 900; margin: 2px; padding: 8px 12px;" id="less" onclick="myFunction('less')">Calculate 计算</button>
+<p><font size="+2">To Pay :<input id="output1" placeholder="支付" style="color:blue;font-size:28px;" size="7" /></font></p>
+
+
+<script>
+    function myFunction(id) {
+        var num1 = document.getElementById("input0").value;
+        var num2 = document.getElementById("input1").value;
+        var num3 = document.getElementById("input2").value;
+        var num4 = document.getElementById("input3").value;
+  		var result;
+        if (id == "less") {
+            result = Number(num1) - Number(num2) - Number(num3) - Number(num4);
+        }
+        document.getElementById("input0").value = num1;
+        document.getElementById("input1").value = num2;
+        document.getElementById("input2").value = num3;
+  		document.getElementById("input3").value = num4;
+        document.getElementById("output1").value = result;
+    }
+</script>
+<!doctype html>
+<!--p>sales on :<span id='date-time'></span>.</p-->
+<script>
+var dt = new Date();
+document.getElementById('date-time').innerHTML=dt;
+</script></!doctype>
+<!doctype html>
+<h1></h1>
+<!--p style="color:red;"><b></b></p-->
+<form action="/action_page.php">
+  <label for="staff" style="color:red;">请选择付款! Payment:</label>
+  <select name="staff" id="staff">
+    <option value="select" />please select
+    <option value="cash" />.CASH
+    <option value="paynow" />1.PAYNOW
+    <option value="cheque/transfer" />2.cheque/transfer支票/转帐
+    <option value="credit card" />3.credit card卡付款
+    <option value="QR-credit card" />4.QR卡付款
+    <option value="ATOME" />5.Atome
+    </select>
+</form></!doctype>
+<form id="myForm" onsubmit="window.print();return false;"  method="POST"action="https://script.google.com/a/macros/fengshuiworld.page/s/AKfycbx8jNw_Q3nvRJre8mFWARWwMNpTCaQylaWzoDGEkpkEl4pcabklKHHPl4uOyn2aZFE17g/exec">
+  <h2>Billing Details(账单明细)</h2>
+    <div class="cart-review-wrap">
+      <div id="contact" class="form-bret">Customer name(顾客姓名)<br />
+        <input name="name" size="20" type="text" required/><br />Email address(邮件地址)<br /><input name="email" size="30" type="text" required/><br />phone number(手机号)<br /><input name="phone" size="20" type="number" required/><br />Outlet and Remarks(商店和备注)<br /><textarea class="contact-form-email-message" cols="25" id="ContactForm1_contact-form-email-message" name="email-message" placeholder="" rows="5"></textarea>
+      </div>
+    </div>
+   
+  
+
+Do you agree to the company PDPA being limited to our marketing and notification with regards to your purchase?<br />
+<input type="checkbox" name="yes" value="yes" />yes
+<input type="checkbox" name="no" value="no" />no
+<input type="submit" style="background-color: orange; border-radius: 8px; color: black; font-weight: bold; margin: 5px; padding: 8px 12px;" target="_blank" value="PRINT ORDER.打印订单">
+</>
+</form>
